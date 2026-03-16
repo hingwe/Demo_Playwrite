@@ -163,12 +163,6 @@ def test_google_title1():
         
         
         
-def test_google_title13():
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
-        page.goto("https://www.google.com")
-        assert "Google" in page.title()
-        browser.close()
+
         
                 
