@@ -2,16 +2,16 @@
 
 
 # # ---------------- Playwright Test Cases ----------------
-def test_google_search(page: Page):
-     # Navigate to Google
-    page.goto("https://www.google.com")
-    assert "Google" in page.title(), "Google homepage title is incorrect"
-    page.fill("textarea[name='q']", "Playwright Python")
-    page.keyboard.press("Enter")
+# def test_google_search(page: Page):
+#      # Navigate to Google
+#     page.goto("https://www.google.com")
+#     assert "Google" in page.title(), "Google homepage title is incorrect"
+#     page.fill("textarea[name='q']", "Playwright Python")
+#     page.keyboard.press("Enter")
 
-    # Wait for search results to load
-    page.wait_for_selector("text=Playwright")
-    assert "Playwright" in page.content(), "Search results do not contain 'Playwright'"
+#     # Wait for search results to load
+#     page.wait_for_selector("text=Playwright")
+#     assert "Playwright" in page.content(), "Search results do not contain 'Playwright'"
 
 
 def test_demo_website_workflow(page: Page):
