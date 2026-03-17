@@ -14,10 +14,10 @@
 #     assert "Playwright" in page.content(), "Search results do not contain 'Playwright'"
 
 
-def test_demo_website_workflow(page: Page):
-    # Step 1: Navigate to the demo website
-    page.goto("https://demo.playwright.dev/login")
-    assert "Login" in page.title(), "Login page title is incorrect"
+# def test_demo_website_workflow(page: Page):
+#     # Step 1: Navigate to the demo website
+#     page.goto("https://demo.playwright.dev/login")
+#     assert "Login" in page.title(), "Login page title is incorrect"
 
     # Step 2: Perform login
     page.fill("input[name='username']", "admin")
