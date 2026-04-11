@@ -3,7 +3,7 @@
 
 
 
-
+flatten = lambda x: [i for sub in x for i in (flatten(sub) if isinstance(sub, list) else [sub])]
 
         
         
@@ -32,6 +32,5 @@ a=121
 print(str(a)==str(a)[::-1])
 print(s == s[::-1])       
                 
-
         
                 
